@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*  HAGO EL RESET DE LA PAGINA*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: wheat;
+}
+
+/*  HEADER y NAVBAR */
+
+header {
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+
+header .logo {
+    cursor: pointer;
+}
+
+
+header .logo img {
+    height: 70px;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+header nav .navbar {
+    list-style: none;
+}
+
+header nav .navbar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .navbar li:hover {
+    transform: scale(1.1);
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #eceff1;
+}
+
+header .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .btn button:hover {
+    transform: scale(1.1);
+}
+
+/*  FOOTER  */
+
+.main__footer {
+    width: 100%;
+    background: #1b3039;
+}
+
+.main__footer .footer__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.main__footer .footer__container .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__footer .footer__container .box figure img {
+    width: 250px;
+}
+
+.main__footer .footer__container .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.main__footer .footer__container .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.main__footer .footer__container .redes__sociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.main__footer .footer__container .redes__sociales a:hover {
+    background: #18334e;
+}
+
+.main__footer .footer__derechos {
+    background-color: #1b3039;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.main__footer .footer__derechos small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .main__footer .footer__container {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/*  FORMULARIO DE CONTACTO  */
+
+.form__container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    background: #1b3039;
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+.form__container h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.form__container p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.form__container a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.form__container a i {
+    color: cadetblue;
+    margin-right: 10px;
+}
+
+.form__container form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.form__container form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    max-height: 140px;
+    min-height: 140px;
+}
+
+.form__container .btn__enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #efefef;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.form__container .btn__enviar:hover {
+    transform: scale(1.1);
+}
+
+/*  PAGINA DE CONOCIMIENTO  */
+
+.main__ccontainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 15px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+main .h1__conocimientos {
+    text-align: center;
+}
+
+.main__ccontainer .articulos {
+    padding: 15px 15px;
+    background-color: #1b3039;
+    margin: 0px 30px;
+    border-radius: 5px;
+}
+
+.main__ccontainer .articulos p {
+    color: #efefef;
+}
+
+/*      INDEX CONTAINER        */
+
+.index__container {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.index__container .btn__main {
+    padding: 10px 15px;
+    margin: auto;
+    background-color: #1b3039;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    transition: all 300ms ease;
+}
+
+.index__container .btn__main:hover {
+    transform: scale(1.1);
+}
+
+.index__container h1 {
+    margin-top: 60px;
+}
+
+/*  PAGINA QUIEN SOY    */
+
+.quiensoy__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.quiensoy__container .grid__box img {
+    width: 300px;
+}
+
+.quiensoy__container .grid__box {
+    text-align: left;
+}
+
+/*  PAGINA EXPERIENCIA  */
+
+.experiencia_container{
+    text-align: bottom;
+}
+
+.box__experiencia {
+
+width: 100%;
+max-width: 1200px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2,1fr);
+justify-content: center;
+justify-items: center;
+grid-template-areas:
+"imagen1 texto1"
+"imagen2 texto2"
+;
+}
+
+.texto1 {
+    margin-top: 50px;
+    grid-area: texto1;
+}
+
+.texto2 {
+    margin-top: 50px;
+    grid-area: texto2;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
