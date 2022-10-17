@@ -16,62 +16,6 @@ body {
 
 /*  HEADER y NAVBAR */
 
-header {
-    background-color: #1b3039;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-}
-
-
-header .logo {
-    cursor: pointer;
-}
-
-
-header .logo img {
-    height: 70px;
-}
-
-header .logo img:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
-}
-
-header nav .navbar {
-    list-style: none;
-}
-
-header nav .navbar li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-header .navbar li:hover {
-    transform: scale(1.1);
-}
-
-header .navbar li a {
-    text-decoration: none;
-    color: #eceff1;
-}
-
-header .btn button {
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-header .btn button:hover {
-    transform: scale(1.1);
-}
 
 /*  FOOTER  */
 
@@ -257,12 +201,20 @@ main .h1__conocimientos {
 /*      INDEX CONTAINER        */
 
 .index__container {
-    margin-top: 30px;
-    text-align: center;
-    margin-bottom: 100px;
+
+width: 80%;
+margin: 0 auto;
+background: green;
+display: grid;
+grid-template-columns: auto auto auto;
+justify-content: space-around;
+}
+.container {
+    margin-bottom: 50px;
 }
 
-.index__container .btn__main {
+.container .btn__main {
+
     padding: 10px 15px;
     margin: auto;
     background-color: #1b3039;
@@ -270,17 +222,12 @@ main .h1__conocimientos {
     color: white;
     cursor: pointer;
     border: 0px;
-    margin-bottom: 30px;
-    margin-top: 60px;
     transition: all 300ms ease;
+
 }
 
-.index__container .btn__main:hover {
+.container .btn__main:hover {
     transform: scale(1.1);
-}
-
-.index__container h1 {
-    margin-top: 60px;
 }
 
 /*  PAGINA QUIEN SOY    */
@@ -298,7 +245,9 @@ main .h1__conocimientos {
 }
 
 .quiensoy__container .grid__box img {
-    width: 300px;
+    width: 250px;
+    border-radius: 200px;
+    align-items: center;
 }
 
 .quiensoy__container .grid__box {

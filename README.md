@@ -1,0 +1,1 @@
+Use un navbar de Bootsrap para terminar con mi diseño, las paginas responsive son las de inicio y la de quien soy, tambien probe dejar la de trabajos responsive, por si fallaba en alguna de las dos anteriores.
