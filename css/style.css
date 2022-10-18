@@ -305,7 +305,7 @@ main .h1__conocimientos {
 
 /*   @MEDIA   */
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .box__experiencia {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
