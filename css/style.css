@@ -17,6 +17,42 @@ body {
 /*  HEADER y NAVBAR */
 
 
+
+/*      INDEX CONTAINER        */
+
+.index__container {
+
+    width: 80%;
+    margin: 0 auto;
+    background: green;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.container .btn__main {
+
+    padding: 10px 15px;
+    margin: auto;
+    background-color: #1b3039;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    transition: all 300ms ease;
+
+}
+
+.container .btn__main:hover {
+    transform: scale(1.1);
+}
+
+
+
 /*  FOOTER  */
 
 .main__footer {
@@ -198,81 +234,55 @@ main .h1__conocimientos {
     color: #efefef;
 }
 
-/*      INDEX CONTAINER        */
-
-.index__container {
-
-width: 80%;
-margin: 0 auto;
-background: green;
-display: grid;
-grid-template-columns: auto auto auto;
-justify-content: space-around;
-}
-.container {
-    margin-bottom: 50px;
-}
-
-.container .btn__main {
-
-    padding: 10px 15px;
-    margin: auto;
-    background-color: #1b3039;
-    border-radius: 30px;
-    color: white;
-    cursor: pointer;
-    border: 0px;
-    transition: all 300ms ease;
-
-}
-
-.container .btn__main:hover {
-    transform: scale(1.1);
-}
 
 /*  PAGINA QUIEN SOY    */
 
 .quiensoy__container {
-    width: 100%;
     max-width: 1200px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-    justify-content: center;
-    justify-items: center;
-}
-
-.quiensoy__container .grid__box img {
-    width: 250px;
-    border-radius: 200px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "pic informacion"
+    ;
     align-items: center;
+    align-content: center;
+    grid-gap: 0ch;
 }
 
-.quiensoy__container .grid__box {
-    text-align: left;
+.pic_mia {
+    grid-area: pic;
+    text-align: center;
 }
+
+.pic_mia img {
+    border-radius: 200px;
+}
+
+.informacion {
+    grid-area: informacion;
+}
+
+.pic_mia img {
+    width: 250px;
+}
+
 
 /*  PAGINA EXPERIENCIA  */
 
-.experiencia_container{
-    text-align: bottom;
-}
-
 .box__experiencia {
 
-width: 100%;
-max-width: 1200px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2,1fr);
-justify-content: center;
-justify-items: center;
-grid-template-areas:
-"imagen1 texto1"
-"imagen2 texto2"
-;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "imagen1 texto1"
+        "imagen2 texto2"
+    ;
 }
 
 .texto1 {
@@ -291,4 +301,40 @@ grid-template-areas:
 
 .imagen2 {
     grid-area: imagen2;
+}
+
+/*   @MEDIA   */
+
+@media (max-width: 576px) {
+    .box__experiencia {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "imagen1"
+            "texto1"
+            "imagen2"
+            "texto2"
+        ;
+    }
+
+    .texto1 {
+        margin: 0;
+    }
+
+    .texto2 {
+        margin: 0;
+    }
+
+    .quiensoy__container {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+
+            "pic"
+            "informacion"
+
+        ;
+
+    }
 }
