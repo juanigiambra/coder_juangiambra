@@ -1,0 +1,21 @@
+{
+  "name": "coder_juangiambra",
+  "version": "1.0.0",
+  "description": "Use un navbar de Bootsrap para terminar con mi diseño, las paginas responsive son las de inicio y la de quien soy, tambien probe dejar la de trabajos responsive, por si fallaba en alguna de las dos anteriores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanigiambra/coder_juangiambra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanigiambra/coder_juangiambra/issues"
+  },
+  "homepage": "https://github.com/juanigiambra/coder_juangiambra#readme"
+}
