@@ -1,25 +1,31 @@
-/* PAGINA QUIEN SOY */
-
+/*  PAGINA QUIEN SOY    */
 .quiensoy__container {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "pic informacion"
-    ;
-    align-items: center;
-    align-content: center;
-    grid-gap: 0ch;
-    .pic_mia {
-        grid-area: pic;
-        text-align: center;
-        img {
-            border-radius: 200px;
-            width: 250px;
-        }
-    }
-    .informacion {
-        grid-area: informacion;
-    }
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: "pic informacion";
+	align-items: center;
+	align-content: center;
+	grid-gap: 0ch;
+}
+.pic_mia {
+	grid-area: pic;
+	text-align: center;
+	img {
+		border-radius: 200px;
+		width: 250px;
+	}
+}
+.informacion {
+	grid-area: informacion;
+}
+
+@media (max-width:768px) {
+    .quiensoy__container {
+		margin-top: 30px;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "pic" "informacion";
+	}
 }

@@ -1,24 +1,58 @@
-/* PAGINA CONOCIMIENTOS */
+/*  PAGINA DE CONOCIMIENTO  */
 
-main {
-    .h1__conocimientos {
-        text-align: center;
-    }
-    .main__ccontainer {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        padding: 15px 15px;
-        text-align: center;
-        width: 100%;
+.main__ccontainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 15px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+main .h1__conocimientos {
+    text-align: center;
+}
+
+.main__ccontainer .articulos {
+    padding: 15px 15px;
+    background-color: #1b3039;
+    margin: 0px 30px;
+    border-radius: 5px;
+}
+
+.main__ccontainer .articulos p {
+    color: #efefef;
+}
+
+.frontend {
+    grid-area: frontend;
+}
+.backend {
+    grid-area: backend;
+}
+.extras {
+    grid-area: extras;
+}
+
+@media (max-width: 768px) {
+            .main__ccontainer {
+                display: grid;  
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,1fr); 
+                gap: 0px 0px; 
+                grid-template-areas: 
+                "frontend"
+                "backend"
+                "extras";
+        }
         .articulos {
             padding: 15px 15px;
             background-color: $color--principal;
-            margin: 0px 30px;
+            margin: 30px 30px;
             border-radius: 5px;
-            p {
-                color: #efefef;
-            }
-        }
+            width: 250px;
+            height: 250px;
+            text-align: center;
     }
+    
 }
