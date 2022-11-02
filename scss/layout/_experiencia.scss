@@ -1,0 +1,45 @@
+.box__experiencia {
+
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "imagen1 texto1"
+        "imagen2 texto2"
+    ;
+}
+
+@media (max-width: 768px) {
+    .box__experiencia {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "imagen1"
+            "texto1"
+            "imagen2"
+            "texto2"
+        ;
+    }
+}
+
+.texto1 {
+    margin-top: 50px;
+    grid-area: texto1;
+}
+
+.texto2 {
+    margin-top: 50px;
+    grid-area: texto2;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}

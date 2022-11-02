@@ -1,0 +1,24 @@
+/* PAGINA CONOCIMIENTOS */
+
+main {
+    .h1__conocimientos {
+        text-align: center;
+    }
+    .main__ccontainer {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 15px 15px;
+        text-align: center;
+        width: 100%;
+        .articulos {
+            padding: 15px 15px;
+            background-color: $color--principal;
+            margin: 0px 30px;
+            border-radius: 5px;
+            p {
+                color: #efefef;
+            }
+        }
+    }
+}
