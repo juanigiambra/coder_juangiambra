@@ -165,7 +165,8 @@
     margin-top: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "pic" "informacion"; } }
+    grid-template-areas: "pic" "informacion";
+    text-align: center; } }
 
 /*  PAGINA DE CONOCIMIENTO  */
 .main__ccontainer {
