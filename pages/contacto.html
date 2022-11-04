@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/752e992e93.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Portfolio</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -39,26 +37,49 @@
             </div>
           </nav>
     </header>
-    <main>
-        <div class="form__container">
-            <div class="form__info">
-                <h2>Contactame!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore quia aperiam. Officia unde
-                    aliquam minima error. Fugit voluptatem esse eius culpa iste dolores eum similique nemo, excepturi
-                    sapiente suscipit?</p>
-                <a href="#"><i class="fa fa-phone"></i>1124042577</a>
-                <a href=""><i class="fa fa-envelope"></i>giambrajuan@gmail.com</a>
-                <a href=""><i class="fa fa-map-marked"></i>Coghlan, Ciudad Autonoma de Bueno Aires</a>
+    <div class="container__form">
+        <div class="wrapper">
+            <div class="info__contacto">
+                <h3>Juani Giambra</h3>
+                <ul>
+                    <li>Coghlan, CABA</li>
+                    <li>1124042577</li>
+                    <li>JuanIgnacioGiambra@gmail.com</li>
+                </ul>
             </div>
-            <form  class="formularios" action="#" autocomplete="off">
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-                <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
-                <textarea name="mensaje" placeholder="Escribi tu mensaje aca"></textarea>
-                <input type="button" value="Enviar mensaje" name="enviar" class="btn__enviar">
-            </form>
-        </div>
-    </main>
+            <div class="contacto__form">
+                <h3>Email us</h3>
+                <form>
+                    <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name">
+                    </p>
+                    <p>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto">
+                    </p>
 
+                    <p>
+                    <label for="email">Mail:</label>
+                    <input type="email" name="email">
+                    </p>
+
+                    <p>
+                    <label for="numero">Numero:</label>
+                    <input type="text" name="numero">
+                    </p>
+
+                    <p class="full">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" rows="5"></textarea>
+                    </p>
+
+                    <p class="full"><button>Enviar</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact"></div>
 
     <footer class="main__footer">
         <div class="footer__container">
@@ -93,9 +114,9 @@
         </div>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
