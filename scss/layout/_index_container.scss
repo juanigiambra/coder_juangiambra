@@ -10,8 +10,18 @@
     justify-content: space-around;
 }
 
+.nav {
+    background-color: $color--principal;
+}
+
 .container {
     margin-bottom: 50px;
+    height: 400px;
+    background-image: url("../../assets/img/codew.jpg");
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    justify-items: center;
     .btn__main {
 
         padding: 10px 15px;
